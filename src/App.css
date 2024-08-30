@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   background-color: #D8DFE8;
 
@@ -9,7 +7,26 @@
 .Alerta{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  font-size: 90%;
+  }
+
+.Contenedor_Texto{
+  flex-direction: column;
+  display: flex;
+  font-size: 200%;
+  flex: 2;
   background-color: red;
+  height: 55rem;
+}
+.Contenedor_Texto p{
+
+}
+
+.Alerta p{
+  display: flex;
+  padding-left: 1rem;
+
 }
 .Alerta img{
   width: 2rem;
@@ -34,7 +51,8 @@
 }
 
 .Logo {
-  height: 15em;
+  display: flex;
+  height: 5em;
   width: 50rem;
   padding: 1.5em;
   will-change: filter;
@@ -42,7 +60,23 @@
 }
 
 .ContenedorRespuesta{
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
   background-color: #F3F5FC;
-  width: 50rem;
-  height: 30rem;
+  justify-content: center;
+  height: 50rem;
+}
+.Contenedor_Entrante{
+  display: flex;
+  flex: 1.5;
+  flex-direction: column;
+}
+
+.ContenedorRespuesta img{
+  width: 10em;
+}
+
+.Contenedor_Cuerpo{
+  display: flex;
 }
