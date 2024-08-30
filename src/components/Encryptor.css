@@ -8,11 +8,12 @@
     --color-tertiary: #495057;
     --bg-button-prymary: #0A3871;
     --bg-button-secondary: #D8DFE8;
-  }
+}
   
   body {
     background: var(--bg-tertiary);
     font-family: "Inter", sans-serif;
+    height: 50rem;
   }
   
   header {
@@ -42,7 +43,10 @@
     flex: 4;
   }
   
+  
   textarea {
+    height: 50rem;
+    width: 50rem;
     resize: none;
     color: var(--color-secondary);
     font-family: "Inter_28pt-Regular";
