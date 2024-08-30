@@ -36,7 +36,7 @@ const Encryptor = () => {
     <>
       <header>
         <div className="contenedor_principal">
-          <img className="logo" src="/logo.png" alt="" />
+          <img className="logo" src="/Logo.png" alt="" />
         </div>
       </header>
       <main>
@@ -61,21 +61,24 @@ const Encryptor = () => {
           </form>
         </div>
         <div className={`main ${isOutputVisible ? 'active' : ''}`}>
-          <article className={`resultado ${isOutputVisible ? 'active' : ''}`}>
-            <img src="/Muñeco.png" alt="Decorative" />
-            <h1>{outputText ? 'Mensaje Encontrado' : 'Ningún mensaje fue encontrado'}</h1>
-            <p>{outputText || 'Ingresa el texto que desees encriptar o desencriptar.'}</p>
-          </article>
-          {outputText && (
-            <article className={`resultado__menssage ${isOutputVisible ? 'active' : ''}`}>
-              <p>{outputText}</p>
-              <button id="copy" onClick={handleCopy}>Copiar</button>
-            </article>
-          )}
-        </div>
+  {outputText ? (
+    <article className={`resultado__menssage ${isOutputVisible ? 'active' : ''}`}>
+      <p>{outputText}</p>
+      <button id="copy" onClick={handleCopy}>Copiar</button>
+    </article>
+  ) : (
+    <article className="resultado active">
+      <img src="/Muñeco.png" alt="Decorative" />
+      <h1>{outputText ? 'Mensaje Encontrado' : 'Ningún mensaje fue encontrado'}</h1>
+      <p>{outputText || 'Ingresa el texto que desees encriptar o desencriptar.'}</p>
+    </article>
+  )}
+</div>
+
       </main>
     </>
   );
 };
 
 export default Encryptor;
+

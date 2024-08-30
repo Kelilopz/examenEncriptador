@@ -124,6 +124,7 @@ box-shadow: 0px 24px 32px -8px var(--bg-secondary);
 .resultado.active, .resultado__menssage.active {
 display: flex;
 height: 90%;
+
 }
 
 .resultado img {
@@ -155,14 +156,17 @@ margin-bottom: 15px;
 }
 
 .resultado__menssage button {
+width: 15rem;
+height: 3rem;
 padding: 10px;
 font-size: 16px;
 border: none;
-border-radius: 10px;
+border-radius: 15px;
 background-color: var(--bg-prymary);
 color: var(--color-prymary);
 cursor: pointer;
 }
+
 
 .resultado__menssage button:hover {
 background-color: var(--bg-secondary);
